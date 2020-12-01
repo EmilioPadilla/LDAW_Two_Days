@@ -73,14 +73,18 @@ class Sidebar extends React.Component {
           </a>
         );
         logoText = (
+          <div style={{'font-size': '20px', 'color': '#1e1e2f'}}>
           <a
             href={logo.outterLink}
             className="simple-text logo-normal"
             target="_blank"
             onClick={this.props.toggleSidebar}
+            style={{'color': '#1e1e2f'}}
           >
-            {logo.text}
-          </a>
+             </a>
+             {logo.text}
+            </div>
+        
         );
       } else {
         logoImg = (
@@ -100,7 +104,9 @@ class Sidebar extends React.Component {
             className="simple-text logo-normal"
             onClick={this.props.toggleSidebar}
           >
-            {logo.text}
+            <div style={{'font-size': '40px', 'color': '#1e1e2f'}}>
+             {logo.text}
+            </div>
           </Link>
         );
       }
@@ -111,7 +117,9 @@ class Sidebar extends React.Component {
           {logoImg !== null || logoText !== null ? (
             <div className="logo">
               {logoImg}
+              <div style={{'font-size': '20px', 'color': '#1e1e2f'}}>
               {logoText}
+              </div>
             </div>
           ) : null}
           <Nav>
@@ -131,8 +139,9 @@ class Sidebar extends React.Component {
                     activeClassName="active"
                     onClick={this.props.toggleSidebar}
                   >
-                    <i className={prop.icon} />
-                    <p>{rtlActive ? prop.rtlName : prop.name}</p>
+                    
+                    <i className={prop.icon} style={{'color': '#1e1e2f'}}/>
+                    <p style={{'font-size': '15px', 'color': '#1e1e2f'}}>{rtlActive ? prop.rtlName : prop.name}</p>
                   </NavLink>
                 </li>
               );

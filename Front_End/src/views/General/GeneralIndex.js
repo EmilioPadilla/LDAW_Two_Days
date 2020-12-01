@@ -12,6 +12,7 @@ import employees from '../../images/employees.png';
 import finanzas from '../../images/finanzas.png';
 import reportes from '../../images/reportes.png';
 import cuentas from '../../images/cuentas.png'
+import xGamesLogo from '../../assets/img/Logo_sin_fondo.png';
 import { FRONT_BASE_URL } from 'index';
 
 // reactstrap components
@@ -42,15 +43,23 @@ class GeneralIndex extends React.Component {
       <br/><br/><br/>
     <Col>
       <Row className="justify-content-md-center">
-          <h1 style={{'font-size': '70px'}}>ASOCIACIÓN</h1>
+          {/* <h1 style={{'font-size': '70px'}}>XGAMES</h1> */}
+          <img src="" 
+                      width="400in" 
+                      height="500in"
+                      className="img-fluid" 
+                      alt="xGames" 
+                      id="imagenIngreso" 
+                      src={xGamesLogo}></img>
       </Row>
       <Row className="justify-content-md-center">
-      <h1 style={{'font-size': '70px'}}>MAXIMILIANO MARÍA KOLBE</h1>
+      <h1 style={{'font-size': '40px', 'font-family' : 'Julius Sans One'}}>
+        TRADING MADE FUN</h1>
       </Row>
       <br/>
       <div className="container">
-      <Row>
-        <Col lg="4">
+      <Row style={{display: 'flex', justifyContent: 'center'}}>
+        <Col lg="5">
           <Card className="card-chart text-center">
             {/* <CardHeader>
               <CardTitle tag="h1">
@@ -58,17 +67,18 @@ class GeneralIndex extends React.Component {
               </CardTitle>
             </CardHeader> */}
             <CardBody>
-              <h1>BENEFICIARIAS</h1>
-              <div className="chart-area" style={{'font-size': '170px'}} onClick={(e) => {
+              <h1>CATÁLOGO</h1>
+              <div className="chart-area" style={{'font-size': '190px', 'color': '#97bbe6'}} onClick={(e) => {
                           e.preventDefault();
                           this.props.history.push("/admin/Beneficiarias/GeneralViewAdmin");
                         }}>
-                <img src={beneficiarias} alt="BENEFICIARIAS" width="260px" style={{'margin-bottom': '45px'}}></img>
+                          <i class="fas fa-list"></i>
+                {/* <img src={beneficiarias} alt="BENEFICIARIAS" width="260px" style={{'margin-bottom': '45px'}}></img> */}
               </div>
             </CardBody>
           </Card>
         </Col>
-        <Col lg="4">
+        <Col lg="5">
           <Card className="card-chart text-center">
             {/* <CardHeader>
               <CardTitle tag="h1">
@@ -76,37 +86,35 @@ class GeneralIndex extends React.Component {
               </CardTitle>
             </CardHeader> */}
             <CardBody>
-              <h1>EMPLEADOS</h1>
-              <div className="chart-area" style={{'font-size': '170px', 'color': '#0474ac important!'}} onClick={(e) => {
+              <h1>MIS VIDEOJUEGOS</h1>
+              <div className="chart-area" style={{'font-size': '190px', 'color': '#97bbe6'}} onClick={(e) => {
                           e.preventDefault();
                           this.props.history.push("/admin/search-employee");
                         }}>
+                          <i class="fas fa-gamepad"></i>
                 <img src={employees} alt="EMPLEADOS" height="200px" style={{'margin-bottom': '20px'}}></img>
               </div>
             </CardBody>
           </Card>
         </Col>
-        <Col lg="4">
-          <Card className="card-chart text-center">
+        {/* <Col lg="4">
+          <Card className="card-chart text-center"> */}
             {/* <CardHeader>
               <CardTitle tag="h1">
                 Beneficiarias
               </CardTitle>
             </CardHeader> */}
-            <CardBody>
-              <h1>DONANTES</h1>
-              <div className="chart-area" style={{'font-size': '170px'}} onClick={(e) => {
-                          e.preventDefault();
-                          this.props.history.push("/admin/ViewDonors");
-                        }}>
-                <img src={donantes1} alt="DONANTES" width="220px" style={{'margin-bottom': '40px'}}></img>
-              </div>
+            {/* <CardBody>
+              <h1>MIS INTERCAMBIOS</h1> */}
+              {/* <div className="chart-area" style={{'font-size': '170px'}} onClick={(e) => {  e.preventDefault(); this.props.history.push("/admin/ViewDonors"); }}> */}
+                {/* <img src={donantes1} alt="DONANTES" width="220px" style={{'margin-bottom': '40px'}}></img> */}
+              {/* </div>
             </CardBody>
           </Card>
-        </Col>
+        </Col> */}
       </Row>
-      <Row>
-        <Col lg="4">
+      <Row style={{display: 'flex', justifyContent: 'center'}}>
+        <Col lg="5" className="float-center">
           <Card className="card-chart text-center">
             {/* <CardHeader>
               <CardTitle tag="h1">
@@ -114,49 +122,51 @@ class GeneralIndex extends React.Component {
               </CardTitle>
             </CardHeader> */}
             <CardBody>
-              <h1>FINANZAS</h1>
-              <div className="chart-area" style={{'font-size': '170px'}} onClick={(e) => {
+              <h1>MIS INTERCAMBIOS</h1>
+              <div className="chart-area" style={{'font-size': '190px', 'color': '#97bbe6'}} onClick={(e) => {
                           e.preventDefault();
                           this.props.history.push("/admin/Finanzas/MonthlyView");
                         }}>
-                <img src={finanzas} alt="FINANZAS" height="220px" style={{'margin-bottom': '55px'}}></img>
+                          <div>
+                          <i size='9x' class="fas fa-exchange-alt"></i>
+                          </div>
               </div>
             </CardBody>
           </Card>
         </Col>
-        <Col lg="4">
-          <Card className="card-chart text-center">
+        {/* <Col lg="4">
+          <Card className="card-chart text-center"> */}
             {/* <CardHeader>
               <CardTitle tag="h1">
                 Beneficiarias
               </CardTitle>
             </CardHeader> */}
-            <CardBody>
+            {/* <CardBody>
               <h1>REPORTES</h1>
-              <div className="chart-area" style={{'font-size': '170px'}}>
-              <img src={reportes} alt="REPORTES" width="180px" style={{'margin-bottom': '55px'}}></img>
+              <div className="chart-area" style={{'font-size': '170px'}}> */}
+              {/* <img src={reportes} alt="REPORTES" width="180px" style={{'margin-bottom': '55px'}}></img>
               </div>
             </CardBody>
           </Card>
-        </Col>
-        <Col lg="4">
+        </Col> */}
+        {/* <Col lg="4">
           <Card className="card-chart text-center">
             {/* <CardHeader>
               <CardTitle tag="h1">
                 Beneficiarias
               </CardTitle>
             </CardHeader> */}
-            <CardBody>
-              <h1>CUENTAS</h1>
+            {/* <CardBody> */}
+              {/* <h1>CUENTAS</h1>
               <div className="chart-area" style={{'font-size': '170px'}} onClick={(e) => {
                           e.preventDefault();
                           this.props.history.push("/admin/Cuentas/principal");
-                        }}>
-                <img src={cuentas} alt="CUENTAS" width="350px" style={{'margin-bottom': '45px'}}></img>
-              </div>
+                        }}> */}
+                {/* <img src={cuentas} alt="CUENTAS" width="350px" style={{'margin-bottom': '45px'}}></img> */}
+              {/* </div>
             </CardBody>
           </Card>
-        </Col>
+        </Col> */}
       </Row>
       </div>
     </Col>
@@ -167,7 +177,7 @@ class GeneralIndex extends React.Component {
         <Col>
         <Nav>
           <NavItem>
-            Desarrollado por SOFTQ {new Date().getFullYear()} {" "} <i className="tim-icons icon-heart-2" />
+            Desarrollado por InTouch {new Date().getFullYear()} {" "} <i className="tim-icons icon-heart-2" />
           </NavItem>
         </Nav>
         </Col>
