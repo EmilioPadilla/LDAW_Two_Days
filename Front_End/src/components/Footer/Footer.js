@@ -30,7 +30,7 @@ class Footer extends React.Component {
         <Container fluid>
           <Nav>
             <NavItem>
-              Desarrollado por SOFTQ {new Date().getFullYear()} {" "} <i className="tim-icons icon-heart-2" /> Bienvenidos
+              Desarrollado por InTouch {new Date().getFullYear()} {" "} <i className="tim-icons icon-heart-2" /> Bienvenidos
             </NavItem>
           </Nav>
         </Container>

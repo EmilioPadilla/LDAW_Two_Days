@@ -97,7 +97,7 @@
 
     [data-toggle="collapse"] ~ div > ul > li:hover > a{
       .sidebar-mini-icon, .sidebar-normal{
-        color: $white;
+        color: #1e1e2f;
       }
 
     }
@@ -154,7 +154,7 @@
       > a{
         margin: 10px 15px 0;
         border-radius: $btn-round-radius;
-        color: $white;
+        color: #1e1e2f;
         display: block;
         text-decoration: none;
         position: relative;
@@ -173,20 +173,20 @@
       &:hover:not(.active) > a,
       &:focus:not(.active) > a{
         p,i{
-          color: $white;
+          color: #1e1e2f;
         }
       }
 
       &:hover:not(.active) > a i,
       &:focus:not(.active) > a i{
-        color: $white;
+        color: #1e1e2f;
       }
 
       &.active > a:not([data-toggle="collapse"]){
         background: transparent;
 
         i,p{
-          color: white;
+          color: #1e1e2f;
         }
 
         &:before{
@@ -204,7 +204,7 @@
       &.active > a[data-toggle="collapse"]{
         background: transparent;
         box-shadow: none;
-        color: $white;
+        color: #1e1e2f;
 
         i{
           color: $white;
@@ -214,7 +214,7 @@
 
           box-shadow: none;
           .sidebar-mini-icon, .sidebar-normal{
-            color: $white;
+            color: #1e1e2f;
             font-weight: $font-weight-normal;
           }
 
@@ -426,7 +426,7 @@
   .nav {
     > li > a,
     > li > a:hover{
-      color: $white;
+      color: #1e1e2f;
     }
 
     > li > a:focus{

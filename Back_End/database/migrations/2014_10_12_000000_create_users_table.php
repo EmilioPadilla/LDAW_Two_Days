@@ -10,6 +10,7 @@ class CreateUsersTable extends Migration
      * Run the migrations.
      *
      * @return void
+     * Si todo va bien, este metodo se ejecuta, caso contrario, se ejecuta la funcion  * down
      */
     public function up()
     {

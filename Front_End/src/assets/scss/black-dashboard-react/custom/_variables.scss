@@ -96,8 +96,8 @@ $colors: map-merge((
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
 $orange-color:               #f96332 !default;
 
-$default:       #0474ac !default;
-$primary:       #0474ac !default;
+$default:       #97bbe6 !default;
+$primary:       #97bbe6 !default;
 $secondary:     #0896dd !default;
 $success:       #61BD75 !default;
 $info:          #777777 !default;
@@ -107,8 +107,8 @@ $black:         #222a42 !default;
 
 
 // gradient
-$default-states:       #0474ac!default;
-$primary-states:       #0474ac !default;
+$default-states:       #97bbe6!default;
+$primary-states:       #97bbe6 !default;
 $success-states:       #52B768 !default;
 $info-states:          #777777 !default;
 $warning-states:       #F4B942 !default;
@@ -376,8 +376,8 @@ $general-transition-time:     300ms             !default;
 
 // Fonts
 
-$font-family-base:            'Poppins', sans-serif !default;
-$font-family-alt:             'Poppins', sans-serif !default;
+$font-family-base:            'Julius Sans One', sans-serif !default;
+$font-family-alt:             'Julius Sans One', sans-serif !default;
 
 $font-size-dash:              .875rem !default;
 
@@ -712,7 +712,7 @@ $nav-pills-padding-x:               1rem !default;
 
 $nav-pills-space-x:                 1rem !default;
 
-$nav-pills-bg:                      $white;
+$nav-pills-bg:                      #1e1e2f;
 $nav-pills-border-width:            1px !default;
 $nav-pills-border-color:            theme-color("primary") !default;
 $nav-pills-border-radius:           $border-radius !default;
@@ -776,8 +776,8 @@ $alert-color-level: 0 !default;
 
 // List group
 
-$list-group-bg:                     $white !default;
-$list-group-border-color:           $border-color !default; //rgba($black, .125);
+$list-group-bg:                     #1e1e2f !default;
+$list-group-border-color:           #1e1e2f !default; //rgba($black, .125);
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -785,9 +785,9 @@ $list-group-item-padding-y:         1rem !default;
 $list-group-item-padding-x:         1rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
+$list-group-active-color:           #1e1e2f !default;
+$list-group-active-bg:              #1e1e2f !default;
+$list-group-active-border-color:    #1e1e2f !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
